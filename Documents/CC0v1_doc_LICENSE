@@ -2,17 +2,24 @@ Creative Commons Legal Code
 
 Public Domain Dedication
 
-    This project, which includes a collection of bash/py scripts and 
-    How-To/Wikis to set up &/or work with specific tools, including all 
-    associated files, is dedicated to the public domain under the terms of 
-    the Creative Commons Zero v1.0 Universal (CC0 1.0 Universal) Public 
-    Domain Dedication.
+    This directory titled "Documents" in the repository path as seen in link, 
+    "github.com/keerthanap0808/wi-KP-dia", which includes a collection of 
+    run-books, tutorials, set-up guides and "How-To" wikis to get started 
+    with &/or work with specific tools and respective environments &/or 
+    cross-tool software stacks; is dedicated to the public domain under the 
+    terms of the Creative Commons Zero v1.0 Universal (CC0 1.0 Universal) 
+    Public Domain Dedication.
 
     The Affirmer, or person dedicating the work, is Keerthana Purushotham.
-    - Contact: 
-      - <keerthanap0808@gmail.com>, 
-      - <keerthupuru@gmail.com>, or
-      - <keep.consult@proton.me>.
+    Contact <keerthanap0808@gmail.com>, <keerthupuru@gmail.com>, or <keep.consult@proton.me>.
+
+    Note that:
+        - All other directories including "wi-KP-dia/Code", "wi-KP-dia/Images" etc., 
+    are licensed under the "GNU General Public License v3.0" and the "Creative 
+    Commons Zero v1.0 Universal License", respectively. 
+        - Please refer to the respective `***v?_LICENSE` file in each directory:
+    "github.com/keerthanap8898/wi-KP-dia/tree/main/<${folder-name_Images-or-Code-etc}>"
+    for more information about directory-specific licensing terms.
 
 CC0 1.0 Universal Summary
 
@@ -22,6 +29,9 @@ CC0 1.0 Universal Summary
 
     Note: The complete legal text of the CC0 1.0 Universal Public Domain 
     Dedication is typically included separately or linked.
+
+    Full legal text available at: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
 
 CC0 1.0 Universal
 
