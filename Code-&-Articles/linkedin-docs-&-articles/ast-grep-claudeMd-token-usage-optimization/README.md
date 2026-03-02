@@ -1,39 +1,36 @@
-
-### My comment on [Aritra's LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7434101650556100608):
-> ([*i.e., Keerthana's extension to the Aritra's LinkedIn article.*](https://www.linkedin.com/feed/update/urn:li:activity:7434101650556100608))
-#### **Ⓐ.** OG `claude.md` prompt [ '***`ast-grep`***' *only* ] -
-> - *Whenever a search requires syntax-aware or structural matching, default to `ast-grep` as shown below. Set `--lang` to the language of the files being searched; & avoid falling back to text-only tools like `rg` or `grep` unless I explicitly request a plain-text search.*
+### `My comment on `[`Aritra's LinkedIn Post`](https://www.linkedin.com/feed/update/urn:li:activity:7434101650556100608) -
+##### *i.e.,* [*Keerthana's extension to the Aritra's LinkedIn article.*](https://www.linkedin.com/feed/update/urn:li:activity:7434101650556100608)
+#### **Ⓐ.** OG `claude.md` prompt ['***`ast-grep`***' *only*]:
+> - ##### *Whenever a search requires syntax-aware or structural matching, default to `ast-grep` as shown below. Set `--lang` to the language of the files being searched; & avoid falling back to text-only tools like `rg` or `grep` unless I explicitly request a plain-text search.*
 >    ```bash
 >    ast-grep --lang <language> -p '<pattern>'
 >    ```
-#### **Ⓑ.** NEW `claude.md` prompt [ '***`tree`***' *as well as* '***`ast-grep`***' ] -
-> - *Optional optimization layer; before any non-trivial search/refactor, use `tree` as a pre-filter to map the repo & pick the narrowest relevant paths. Prefer the command below; add `--prune` if supported.*
+#### **Ⓑ.** NEW `claude.md` prompt ['***`tree`***' *as well as* '***`ast-grep`***']:
+> - ##### *Optional optimization layer; before any non-trivial search/refactor, use `tree` as a pre-filter to map the repo & pick the narrowest relevant paths. Prefer the command below; add `--prune` if supported.*
 >    ```bash
 >     tree -d -L 3 -I '.git|target|node_modules|dist|build|out|vendor'
 >    ```
-> - *Then, whenever a search requires syntax-aware or structural matching, run `ast-grep` within those selected paths, & avoid falling back to text-only tools like `rg` or `grep` unless I explicitly request a plain-text search. If `tree` + `ast-grep` produce no relevant hits, explicitly ask me whether to use a plain-text search before running `rg`/`grep`.*
+> - ##### *Then, whenever a search requires syntax-aware or structural matching, run `ast-grep` within those selected paths, & avoid falling back to text-only tools like `rg` or `grep` unless I explicitly request a plain-text search. If `tree` + `ast-grep` produce no relevant hits, explicitly ask me whether to use a plain-text search before running `rg`/`grep`.*
 >    ```bash
 >       ast-grep --lang <language> -p '<pattern>'
 >    ```
 ---
-### Some lightweight `tree` patterns
-> 1.  Map directories first (cheap repo shape) -
+#### ➤ Some lightweight `tree` patterns to consider -
+> 1.  ##### Map directories first (cheap repo shape):
 >       ```bash 
 >       tree -d -L 3 -I '.git|target|node_modules|dist|build|out|vendor' # (Add --prune if supported)
 >       ```
-> 2. Constrain by filetype in polyglot repos (repeat per language) -
+> 2. ##### Constrain by filetype in polyglot repos (repeat per language):
 >       ```bash
 >       tree -L 4 -P '*.ts' -I '.git|target|node_modules|dist|build|out|vendor'
 >       ```
-> 3. Prefer full paths for copy-paste scoping -
+> 3. ##### Prefer full paths for copy-paste scoping:
 >       ```bash
 >       tree -fi -L 4 -P '*.ts' -I '.git|target|node_modules|dist|build|out|vendor'
 >       ```
-
----
-
-#### Original LinkedIn Post by Aritra:
-> Post link: [linkedin.com/feed/update/urn:li:activity:7434101650556100608](https://www.linkedin.com/feed/update/urn:li:activity:7434101650556100608)
+ ---
+#### ➤ Original LinkedIn Post by Aritra -
+> ##### *Post link*: [*linkedin.com/feed/update/urn:li:activity:7434101650556100608*](https://www.linkedin.com/feed/update/urn:li:activity:7434101650556100608).
 > 
 > *"""*
 > > *You're paying your AI agent to read documentation it's about to ignore.* 🚧
