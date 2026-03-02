@@ -48,6 +48,6 @@
 > > 
 > > *Search for `debounce()` call expressions: you get exactly the code paths that need changing. Nothing else. Precision at search time = smaller context = fewer input tokens = less hallucination risk from irrelevant noise. What goes into your agent's reasoning matters as much as what comes out. Every input token should earn its cost.*
 > >
-> > ![screenie](https://github.com/keerthanap8898/wi-KP-dia/new/main/Code-%26-Articles/linkedin-docs-%26-articles/ast-grep-claudeMd-token-usage-optimization/ast-grep-text-screenie.png)
+> > ![screenie](https://github.com/keerthanap8898/wi-KP-dia/blob/main/Code-%26-Articles/linkedin-docs-%26-articles/ast-grep-claudeMd-token-usage-optimization/ast-grep-text-screenie.png)
 >
 > *"""*
